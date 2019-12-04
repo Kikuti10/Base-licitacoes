@@ -1,0 +1,375 @@
+Delivered-To: fkikuti@gmail.com
+Received: by 2002:a1c:6186:0:0:0:0:0 with SMTP id v128csp4337577wmb;
+        Mon, 28 Oct 2019 21:56:10 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqy9IDqfBBUw3U5B4mXu0144yI9ts319R2WssgIIwiDyLPe8riqLj/YWotpQ6WD1qZQ/0ptF
+X-Received: by 2002:a5e:d502:: with SMTP id e2mr1793989iom.224.1572324969906;
+        Mon, 28 Oct 2019 21:56:09 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1572324969; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=Pn1QOCsvEgMLkD6/XGMSq+sP9SztE6kmHEE5cF/NJJGLgWAtQn9wEOg+dzrD5QfjdL
+         IWHpEqiuxj4eiVOZsmZtUOGBjDhMJrw5DA55MIN7YU041DJZ2b/8wYTapkIEZ82p8eHl
+         V0kUjGzDR9eTbQBcf2CaY39gxfDpbZ6+2JZ+8rrPq70swytd9DZFkvKiDllbPLc4xeEO
+         /P3VSJgPTe0zetnT1VTNMSkOGhfmakZyz+oX/DGAPytSWKbD5ge6PABdrzEJdg1GXCPo
+         nyW7XnvDfxF3/QKJY0mOR9NQNBnJBahN3iVW5nIV1n4N2P7aEUq3Oi0G+1mk3QkQzepv
+         uLGg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:dkim-signature;
+        bh=SassGWTLK0pi0K6dWKJAFl9dN2A/BQ8gcnJspZdcXV8=;
+        b=jwWic0ZeL0ksEM6t1FXrbf7oI63RWPVyGUntScxE6xAO8tGQVG4BsohhuxZG/qexiv
+         gpLdt69AnNleujdHA8YDYbJ5oYIk4h0g0S54x0aY1OyhRrU6FEgCxZQas+wKeEQ90wc6
+         SAEZYFrzQNvzd1D26yDy5GDBpwV6U+5fVJEY41YYcSDMElMKFvHm0RLUDNbmFkrVUAfZ
+         5X64bbLhpjNTgjDDXZkGzV/85Bt4xWWHRs/CbYTIatyDUeL0eT702gBayoKS8rmV+iXf
+         p9H0N0q0qxy1wX2yhplH1qvBPkhJsUjfBN7QmFIkfugentnHIdjY9R2pkUMZRKksp/s3
+         I9Bw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b="Y/dzA8BT";
+       arc=pass (i=1);
+       spf=pass (google.com: domain of juututa@hotmail.com designates 40.92.10.25 as permitted sender) smtp.mailfrom=juututa@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+Return-Path: <juututa@hotmail.com>
+Received: from NAM04-CO1-obe.outbound.protection.outlook.com (mail-oln040092010025.outbound.protection.outlook.com. [40.92.10.25])
+        by mx.google.com with ESMTPS id p4si16477029ioj.124.2019.10.28.21.56.09
+        for <fkikuti@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 28 Oct 2019 21:56:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of juututa@hotmail.com designates 40.92.10.25 as permitted sender) client-ip=40.92.10.25;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b="Y/dzA8BT";
+       arc=pass (i=1);
+       spf=pass (google.com: domain of juututa@hotmail.com designates 40.92.10.25 as permitted sender) smtp.mailfrom=juututa@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=oX26BHiJuu3wKF03T47sbJJtCr1/VLEJoGqL77kuAsGb1E5vxCe4U7Oqhx4O5nSs3KMHphZ8DXiHzJbzmqT2fD43PALwIVs+tAHpiUgvggHvM/7+980DQcsvdUoyM+dzfTX3G9KYQfTNNIrWjQ4C8aJruedtzWfB+KvwRcdjxe8fwgXTJXd5PSvwKM65oVOxwAldAyFptS7BIpEdJY7saC/PlAtZoZVk0VbqMk6oaIhHbhR5Me68ClT0i8bVeZtTL/OpwjcI8XBg86nxgPxmcIRdu31gPSSZNTQZpX6RB76FBsX3p67ztH9tyzwmfUc+awuYLWbqceqtRyNsEXlfUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=SassGWTLK0pi0K6dWKJAFl9dN2A/BQ8gcnJspZdcXV8=;
+ b=CyqjlYYmc+CVEibbY8D2beu16zCbixmA3mvQoxQRdPgpcMZuF4t5WBsduB8QmKRjNMQSPN1S/ko9Ew55FtfqmOv4b4wi8aGE/4iP7QlbSXwBnMFJwC2Bf3DA0P5u44pYIhf+AhyxpWspt8uHpsuJcz9ys2DntW7njaQe7AN02Sl1uGBqDsjfdJmonQsVZaL6yCpO8ZU4bJcdE2+xFGhHKn9bNT0IwElYy+Qy8uUbaz0pN0h2O9dac9bZsKmEyIPHBOJ9GqdPOLkKLprQCO0/YECSSwdJ5fbO8SsxO0J/CKFbbWw0HR1NbP9htvuoiF/Mw07luGC2pBxGt4PNw7jIgQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=SassGWTLK0pi0K6dWKJAFl9dN2A/BQ8gcnJspZdcXV8=;
+ b=Y/dzA8BTGEFgCSWcBrjf7h3suDy3KuxTRJ8mUEh5aZCrKHsXVPB4zTBZiN8c4HkWU50dWUaAclvUHe8XPMBUApjA2CSDF8GshOS1oTMhHvpa6gIUzdCLkHrXX7To4px2Qq6a+VNC8sqFW8rQ3+JVScU/BbuS1F2gxm0hr2gYfJnQ5zIPn2UBeeepuuffKEEszqt5QHJnO4fdYPwFbAzEXbJYBDGZkuRyLdSXKdoWxJR6xk25MyGZoZDPtysHioR6MGm3IxQrYAwxieOS7lGZTovj7Z2IZpM0P01z0Qn0n3SyE7hV4rHh/baqeVHKd5iTSIz0IC6WL9GiS+ovIYXyqQ==
+Received: from BN3NAM04FT016.eop-NAM04.prod.protection.outlook.com
+ (10.152.92.57) by BN3NAM04HT052.eop-NAM04.prod.protection.outlook.com
+ (10.152.93.144) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.20; Tue, 29 Oct
+ 2019 04:56:08 +0000
+Received: from MN2PR06MB6174.namprd06.prod.outlook.com (10.152.92.58) by
+ BN3NAM04FT016.mail.protection.outlook.com (10.152.92.161) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2387.20 via Frontend Transport; Tue, 29 Oct 2019 04:56:08 +0000
+Received: from MN2PR06MB6174.namprd06.prod.outlook.com
+ ([fe80::19a:e35:d71a:2b21]) by MN2PR06MB6174.namprd06.prod.outlook.com
+ ([fe80::19a:e35:d71a:2b21%5]) with mapi id 15.20.2387.025; Tue, 29 Oct 2019
+ 04:56:08 +0000
+From: =?Windows-1252?Q?J=FAlia_Rodrigues?= <juututa@hotmail.com>
+To: "fkikuti@gmail.com" <fkikuti@gmail.com>
+Subject: Fwd: e-SIC - Pedido Respondido
+Thread-Topic: e-SIC - Pedido Respondido
+Thread-Index: AQHVhOLYQOXye59T0kmzTmF72NB0P6dxIHi2
+Date: Tue, 29 Oct 2019 04:56:08 +0000
+Message-ID:
+ <MN2PR06MB61745F0A10F9102CB3907CFFB1610@MN2PR06MB6174.namprd06.prod.outlook.com>
+References: <7d652054-dce2-46a7-bd99-311414910e4a@c1v51d.rede.sp>
+In-Reply-To: <7d652054-dce2-46a7-bd99-311414910e4a@c1v51d.rede.sp>
+Accept-Language: pt-BR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker:
+ OriginalChecksum:87C8D5918B99EACAFB07CEFC17FB3A9241587A1F1633A540A8C5AEDCB343B1E2;UpperCasedChecksum:77FBDA2709E80C813D381CC667E886BF29E34FD528C792DE4B7E692CD0E721AE;SizeAsReceived:6904;Count:44
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [1ZFvSdauQTcydo9Dbs4pSau0xA3iFzjT1l2GYf1JviQuR82vVrFHL+pnIRBillP5]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 44
+x-eopattributedmessage: 0
+x-ms-traffictypediagnostic: BN3NAM04HT052:
+x-ms-exchange-purlcount: 2
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 2V3YHi8ZE0mmZKmH5RaNrCBUQm4UxG2rxenJvfp2TUonADMBSSPdSv8Tc1Ddy4fFqSvUxDhdtqfOd1Ws46ATgokUupWkUa/aww5Hhstuekcdsgv2tbCmdRuhkw5tGUaougvfT40hjZ0LAqTWc5mrKB25iikm9ZeNdIKqA5XzPGMf996VqUk+TADGd9H2Fnv8bYOItstlkuSUjjKMDa0vPl/xxaSHEFotSA6Jj9oV39w=
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_MN2PR06MB61745F0A10F9102CB3907CFFB1610MN2PR06MB6174namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6f56bbdd-72d0-4f17-338a-08d75c2c4fb8
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-originalarrivaltime: 29 Oct 2019 04:56:08.1283
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN3NAM04HT052
+
+--_000_MN2PR06MB61745F0A10F9102CB3907CFFB1610MN2PR06MB6174namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+
+T=E9l=E9chargez Outlook pour iOS<https://aka.ms/o0ukef>
+________________________________
+De : nao-responda@e-sic.prefeitura.sp.gov.br <nao-responda@e-sic.prefeitura=
+.sp.gov.br>
+Envoy=E9 : Thursday, October 17, 2019 9:02:59 AM
+=C0 : juututa@hotmail.com <juututa@hotmail.com>
+Objet : e-SIC - Pedido Respondido
+
+[http://transparencia.prefeitura.sp.gov.br/acesso-a-informacao/PublishingIm=
+ages/logo_e-sic_mini.png]
+Sistema e-SIC
+Prezado(a) Senhor(a),
+
+O pedido de informa=E7=E3o abaixo foi analisado e teve resposta na data 17/=
+10/2019.
+
+Protocolo: 42649
+Requerente: J=FAlia Rodrigues Silva
+Data de Abertura: 17/09/2019
+Prazo de atendimento: 07/10/2019
+=D3rg=E3o da solicita=E7=E3o: SF - Secretaria Municipal da Fazenda
+
+Solicita=E7=E3o do requerente: Solicito as informa=E7=F5es referentes =E0s =
+propostas integrais das empresas vencedoras de processos licitat=F3rios no =
+ano de 2018 no munic=EDpio de S=E3o Paulo, com base no artigo 3=BA, =A73=BA=
+ da Lei n=BA 8.666/93: =93=A7 3o A licita=E7=E3o n=E3o ser=E1 sigilosa, sen=
+do p=FAblicos e acess=EDveis ao p=FAblico os atos de seu procedimento, salv=
+o quanto ao conte=FAdo das propostas, at=E9 a respectiva abertura.=94 Consi=
+derando que a abertura da licita=E7=E3o se d=E1 na contrata=E7=E3o da empre=
+sa vencedora, n=E3o h=E1 =F3bice =E0 publica=E7=E3o das propostas enviadas =
+por essas empresas.
+
+Resposta: Prezada Julia, Em aten=E7=E3o ao pedido e-SIC n=BA 42649, informa=
+mos que, na Prefeitura do Munic=EDpio de S=E3o Paulo, os processos licitat=
+=F3rios s=E3o realizados descentralizadamente por cada Pasta interessada. A=
+ssim, as informa=E7=F5es constantes nesta resposta referem-se exclusivament=
+e =E0 Secretaria Municipal da Fazenda. Informamos que, em rela=E7=E3o =E0 m=
+odalidade preg=E3o eletr=F4nico, a partir do ano de 2016, as propostas pass=
+aram a ser recebidas via sistema e podem ser consultadas no sistema COMPRAS=
+NET, atrav=E9s do endere=E7o https://www.comprasgovernamentais.gov.br/index=
+.php/consultass. Clique com o bot=E3o esquerdo do mouse em =93Compras Gover=
+namentais=94, =93Preg=F5es=94, =93Atas/Anexos=94, e preencha o campo C=F3d.=
+ UASG (Unid. de Compra) com o c=F3digo 925011 e o campo n=FAmero do Preg=E3=
+o. O n=FAmero do Preg=E3o dever=E1 ser preenchido com um n=FAmero sequencia=
+l (iniciando em 1) e o ano do preg=E3o. Por exemplo, para o preg=E3o de n=
+=FAmero 10 do ano 2017, o campo deve ser preenchido com =93102017=94. Ap=F3=
+s clicar em OK, uma nova tela ser=E1 apresentada. Clique no n=FAmero da lic=
+ita=E7=E3o, e, em seguida, no link =93Anexos de Proposta=94 para que tenha =
+acesso =E0 proposta e aos documentos de habilita=E7=E3o. Por outro lado, qu=
+anto ao preg=E3o eletr=F4nico de 2015 e =E0s demais modalidades de licita=
+=E7=E3o, informamos que n=E3o temos as propostas vencedoras em um sistema c=
+omo o COMPRASNET. Para disponibiliz=E1-las, seria necess=E1rio um trabalho =
+de pesquisa em todos os processos nesta Secretaria, determinar se o process=
+o licitat=F3rio teve uma empresa vencedora, identificar a proposta vencedor=
+a e disponibilizar uma c=F3pia da proposta. A atividade descrita =E9 vedada=
+, conforme o disposto no art. 16, III, do Decreto n=BA 53.623/2012, que reg=
+ulamenta a Lei de Acesso =E0 Informa=E7=E3o (LAI) no =E2mbito desta Municip=
+alidade: =93N=E3o ser=E3o atendidos pedidos de acesso =E0 informa=E7=E3o qu=
+e exijam trabalhos adicionais de an=E1lise, interpreta=E7=E3o ou consolida=
+=E7=E3o de dados e informa=E7=F5es, ou servi=E7o de produ=E7=E3o ou tratame=
+nto de dados que n=E3o seja de compet=EAncia do =F3rg=E3o ou entidade=94 (g=
+rifo nosso). Entretanto, o art. 16, =A7 1=BA, do Decreto n=BA 53.623/2012 p=
+rev=EA que =93a informa=E7=E3o ser=E1 disponibilizada ao requerente da mesm=
+a forma que se encontrar arquivada ou registrada no =F3rg=E3o ou entidade m=
+unicipal, n=E3o cabendo a estes =FAltimos realizar qualquer trabalho de con=
+solida=E7=E3o ou tratamento de dados, tais como a elabora=E7=E3o de planilh=
+as ou banco de dados=94 (grifo nosso). Assim, disponibilizamos a planilha a=
+nexa com uma rela=E7=E3o de contrata=E7=F5es em todas as modalidades do ano=
+s de 2018 nesta Secretaria. Caso a mun=EDcipe tenha interesse em acessar as=
+ propostas, dever=E1 solicitar vistas aos processos listados na planilha an=
+exa. Cumpre notar que na referida listagem constam todos os processos licit=
+at=F3rios, sejam abandonados, fracassados ou frutuosos. Assim caber=E1 =E0 =
+mun=EDcipe, durante o processo de vistas, identificar as propostas vencedor=
+as. Informamos ainda que todas as compras e licita=E7=F5es efetuadas na Pre=
+feitura do Munic=EDpio de S=E3o Paulo est=E3o disponibilizadas no link http=
+://transparencia.prefeitura.sp.gov.br/contas/Paginas/ComprasLicitacoes.aspx=
+ e que a mun=EDcipe dever=E1 redirecionar o pedido aos =F3rg=E3os municipai=
+s de interesse para maiores informa=E7=F5es. Atenciosamente, Evandro Freire=
+ Chefe de Gabinete Secretaria Municipal da Fazenda
+
+Para obter detalhes do pedido de informa=E7=E3o registrado, acesse o e-SIC =
+pelo link http://esic.prefeitura.sp.gov.br e clique na op=E7=E3o do menu do=
+ sistema =93Consultar Pedido=93.
+
+Atenciosamente,
+
+[http://transparencia.prefeitura.sp.gov.br/acesso-a-informacao/PublishingIm=
+ages/logo_prefeitura_esic.png]
+
+--_000_MN2PR06MB61745F0A10F9102CB3907CFFB1610MN2PR06MB6174namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<div dir=3D"ltr" text-align=3D"left">
+<div></div>
+<div data-ogsc=3D"" style=3D"">
+<div>
+<div></div>
+</div>
+<div><br>
+</div>
+<div class=3D"ms-outlook-ios-signature">T=E9l=E9chargez <a href=3D"https://=
+aka.ms/o0ukef" data-ogsc=3D"" style=3D"">
+Outlook pour iOS</a></div>
+</div>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De :</b> nao-responda@e-sic.pre=
+feitura.sp.gov.br &lt;nao-responda@e-sic.prefeitura.sp.gov.br&gt;<br>
+<b>Envoy=E9 :</b> Thursday, October 17, 2019 9:02:59 AM<br>
+<b>=C0 :</b> juututa@hotmail.com &lt;juututa@hotmail.com&gt;<br>
+<b>Objet :</b> e-SIC - Pedido Respondido</font>
+<div>&nbsp;</div>
+</div>
+<div><style>
+<!--
+*
+	{padding:0;
+	margin:0}
+#x_corpo
+	{width:500px;
+	background:#FFF;
+	font-family:'Lucida Sans',Arial,Verdana;
+	font-size:12px;
+	margin:0 auto}
+#x_header, #x_footer
+	{padding:15px 25px}
+#x_middle
+	{background:#e5e5e5;
+	padding:15px 25px}
+#x_middle a
+	{text-decoration:none;
+	color:#2F73B0}
+#x_middle a:hover
+	{text-decoration:underline}
+h3
+	{color:#333;
+	font-size:15px;
+	font-style:normal}
+h1
+	{font-size:24px;
+	color:#333}
+-->
+</style>
+<div id=3D"x_corpo">
+<div id=3D"x_header">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody>
+<tr>
+<td width=3D"250px"><img src=3D"http://transparencia.prefeitura.sp.gov.br/a=
+cesso-a-informacao/PublishingImages/logo_e-sic_mini.png">
+</td>
+<td width=3D"250px">
+<h1>Sistema e-SIC</h1>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"x_middle">Prezado(a) Senhor(a), <br>
+<br>
+O pedido de informa=E7=E3o abaixo foi analisado e teve resposta na data 17/=
+10/2019.<br>
+<br>
+<strong>Protocolo:</strong> 42649 <br>
+<strong>Requerente:</strong> J=FAlia Rodrigues Silva <br>
+<strong>Data de Abertura:</strong> 17/09/2019 <br>
+<strong>Prazo de atendimento:</strong> 07/10/2019<br>
+<strong>=D3rg=E3o da solicita=E7=E3o:</strong> SF - Secretaria Municipal da=
+ Fazenda <br>
+<br>
+<strong>Solicita=E7=E3o do requerente:</strong> Solicito as informa=E7=F5es=
+ referentes =E0s propostas integrais das empresas vencedoras de processos l=
+icitat=F3rios no ano de 2018 no munic=EDpio de S=E3o Paulo, com base no art=
+igo 3=BA, =A73=BA da Lei n=BA 8.666/93: =93=A7 3o A licita=E7=E3o
+ n=E3o ser=E1 sigilosa, sendo p=FAblicos e acess=EDveis ao p=FAblico os ato=
+s de seu procedimento, salvo quanto ao conte=FAdo das propostas, at=E9 a re=
+spectiva abertura.=94 Considerando que a abertura da licita=E7=E3o se d=E1 =
+na contrata=E7=E3o da empresa vencedora, n=E3o h=E1 =F3bice =E0 publica=E7=
+=E3o
+ das propostas enviadas por essas empresas. <br>
+<br>
+<strong>Resposta:</strong> Prezada Julia, Em aten=E7=E3o ao pedido e-SIC n=
+=BA 42649, informamos que, na Prefeitura do Munic=EDpio de S=E3o Paulo, os =
+processos licitat=F3rios s=E3o realizados descentralizadamente por cada Pas=
+ta interessada. Assim, as informa=E7=F5es constantes
+ nesta resposta referem-se exclusivamente =E0 Secretaria Municipal da Fazen=
+da. Informamos que, em rela=E7=E3o =E0 modalidade preg=E3o eletr=F4nico, a =
+partir do ano de 2016, as propostas passaram a ser recebidas via sistema e =
+podem ser consultadas no sistema COMPRASNET,
+ atrav=E9s do endere=E7o https://www.comprasgovernamentais.gov.br/index.php=
+/consultass. Clique com o bot=E3o esquerdo do mouse em =93Compras Govername=
+ntais=94, =93Preg=F5es=94, =93Atas/Anexos=94, e preencha o campo C=F3d. UAS=
+G (Unid. de Compra) com o c=F3digo 925011 e o campo n=FAmero
+ do Preg=E3o. O n=FAmero do Preg=E3o dever=E1 ser preenchido com um n=FAmer=
+o sequencial (iniciando em 1) e o ano do preg=E3o. Por exemplo, para o preg=
+=E3o de n=FAmero 10 do ano 2017, o campo deve ser preenchido com =93102017=
+=94. Ap=F3s clicar em OK, uma nova tela ser=E1 apresentada.
+ Clique no n=FAmero da licita=E7=E3o, e, em seguida, no link =93Anexos de P=
+roposta=94 para que tenha acesso =E0 proposta e aos documentos de habilita=
+=E7=E3o. Por outro lado, quanto ao preg=E3o eletr=F4nico de 2015 e =E0s dem=
+ais modalidades de licita=E7=E3o, informamos que n=E3o temos
+ as propostas vencedoras em um sistema como o COMPRASNET. Para disponibiliz=
+=E1-las, seria necess=E1rio um trabalho de pesquisa em todos os processos n=
+esta Secretaria, determinar se o processo licitat=F3rio teve uma empresa ve=
+ncedora, identificar a proposta vencedora
+ e disponibilizar uma c=F3pia da proposta. A atividade descrita =E9 vedada,=
+ conforme o disposto no art. 16, III, do Decreto n=BA 53.623/2012, que regu=
+lamenta a Lei de Acesso =E0 Informa=E7=E3o (LAI) no =E2mbito desta Municipa=
+lidade: =93N=E3o ser=E3o atendidos pedidos de acesso
+ =E0 informa=E7=E3o que exijam trabalhos adicionais de an=E1lise, interpret=
+a=E7=E3o ou consolida=E7=E3o de dados e informa=E7=F5es, ou servi=E7o de pr=
+odu=E7=E3o ou tratamento de dados que n=E3o seja de compet=EAncia do =F3rg=
+=E3o ou entidade=94 (grifo nosso). Entretanto, o art. 16, =A7 1=BA, do Decr=
+eto
+ n=BA 53.623/2012 prev=EA que =93a informa=E7=E3o ser=E1 disponibilizada ao=
+ requerente da mesma forma que se encontrar arquivada ou registrada no =F3r=
+g=E3o ou entidade municipal, n=E3o cabendo a estes =FAltimos realizar qualq=
+uer trabalho de consolida=E7=E3o ou tratamento de dados,
+ tais como a elabora=E7=E3o de planilhas ou banco de dados=94 (grifo nosso)=
+. Assim, disponibilizamos a planilha anexa com uma rela=E7=E3o de contrata=
+=E7=F5es em todas as modalidades do anos de 2018 nesta Secretaria. Caso a m=
+un=EDcipe tenha interesse em acessar as propostas,
+ dever=E1 solicitar vistas aos processos listados na planilha anexa. Cumpre=
+ notar que na referida listagem constam todos os processos licitat=F3rios, =
+sejam abandonados, fracassados ou frutuosos. Assim caber=E1 =E0 mun=EDcipe,=
+ durante o processo de vistas, identificar
+ as propostas vencedoras. Informamos ainda que todas as compras e licita=E7=
+=F5es efetuadas na Prefeitura do Munic=EDpio de S=E3o Paulo est=E3o disponi=
+bilizadas no link http://transparencia.prefeitura.sp.gov.br/contas/Paginas/=
+ComprasLicitacoes.aspx e que a mun=EDcipe dever=E1
+ redirecionar o pedido aos =F3rg=E3os municipais de interesse para maiores =
+informa=E7=F5es. Atenciosamente, Evandro Freire Chefe de Gabinete Secretari=
+a Municipal da Fazenda
+<br>
+<br>
+Para obter detalhes do pedido de informa=E7=E3o registrado, acesse o e-SIC =
+pelo link <a href=3D"http://esic.prefeitura.sp.gov.br">
+http://esic.prefeitura.sp.gov.br </a>e clique na op=E7=E3o do <i>menu</i> d=
+o sistema =93Consultar Pedido=93.
+<br>
+<br>
+Atenciosamente,<br>
+<br>
+</div>
+<div id=3D"x_footer"><img src=3D"http://transparencia.prefeitura.sp.gov.br/=
+acesso-a-informacao/PublishingImages/logo_prefeitura_esic.png">
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_MN2PR06MB61745F0A10F9102CB3907CFFB1610MN2PR06MB6174namp_--
